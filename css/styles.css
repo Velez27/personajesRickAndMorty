@@ -5,4 +5,28 @@
 
 .container{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: "header"
+                         "contenido"
+                         "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.contenido{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 300px);
+}
+
+.contenido img{
+    width: 120px;
+}
+
+.footer{
+    grid-area: footer;
 }
