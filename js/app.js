@@ -1,3 +1,18 @@
+const buttonPersonajes = document.getElementById('button');
+
+buttonPersonajes.addEventListener('click', () => {
+    eliminarPersonajes();
+    imprimirPersonaje(10);
+});
+
+function eliminarPersonajes(){
+    let seccion = document.getElementById('contenido');
+    let contenidoTotal = seccion.childElementCount;
+    for(let i = 0; i < contenidoTotal; i++){
+        seccion.lastChild.remove();
+    }
+}
+
 function aleatorio(){
     const max = 493;
     const min = 1;
@@ -10,6 +25,7 @@ function crearTarjetaPersonaje(nombre, status, species, gender, origin, location
 
     let seccion = document.getElementById('contenido');
     let tarjetaPersonaje = document.createElement('div');
+    tarjetaPersonaje.className = 'tarjetasPersonajes';
 
     // Imagen del personaje
     let imagenPersonaje = document.createElement('img');
