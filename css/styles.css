@@ -4,6 +4,7 @@
 }
 
 body{
+    background: #0083B0;
     background: linear-gradient(to top, #0083B0, #00B4DB);
     font-family: 'Lato', sans-serif;
     color: black;
@@ -95,4 +96,48 @@ body{
 .footer_derecha{
     color: white;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 1098px){
+    .container{
+        grid-template-rows: 140px 1fr 30px;
+    }
+    .header_description{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .contenido{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 734px){
+    .container{
+        grid-template-rows: 120px 1fr 30px;
+    }
+    .contenido{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header_title{
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    .header_description{
+        font-size: 12px;
+    }
+    .header_button{
+        font-size: 12px;
+    }
+    .header_button button{
+        width: 100px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 460px){
+    .contenido{
+        grid-template-columns: repeat(2, 1fr) ;
+    }
 }
