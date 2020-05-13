@@ -112,6 +112,9 @@ body{
     .contenido{
         grid-template-columns: repeat(4, 1fr);
     }
+    .contenido p{
+        padding: 2;
+    }
 }
 
 @media screen and (max-width: 734px){
@@ -135,9 +138,36 @@ body{
         width: 100px;
         height: 20px;
     }
+    .contenido p{
+        padding: 0;
+    }
 }
 @media screen and (max-width: 460px){
     .contenido{
         grid-template-columns: repeat(2, 1fr) ;
+        margin: 20px 30px;
+        font-size: 13px;
     }
+    .contenido p{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 401px){
+    .container{
+        grid-template-rows: 160px 1fr 30px;
+        gap: 10px 10px;
+    }
+    .contenido{
+        margin: 20px 30px;
+        gap: 30px 10px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .contenido p{
+        padding: 0;
+    }
+    .contenido strong{
+        font-size: 14px;
+    }
+    
 }
