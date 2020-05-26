@@ -49,6 +49,7 @@ body{
     border: 1px solid white;
     color: black;
     cursor: pointer;
+    outline: none
 }
 
 .header_button button:hover{
