@@ -78,7 +78,7 @@ async function crearTarjetaPersonaje(){
 //         .catch(err => console.log(err));
 // }
 
-async function getCharacter(){
+const getCharacter = async () => {
     let numCharacter = aleatorio();
     let api = `https://rickandmortyapi.com/api/character/${numCharacter}`;
     try{
@@ -89,6 +89,8 @@ async function getCharacter(){
         console.log(error.message);
     }
 }
+
+
 
 function imprimirPersonaje(num){
     for(let i = 0; i < num; i++){
