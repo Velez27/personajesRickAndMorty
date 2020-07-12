@@ -67,17 +67,6 @@ async function crearTarjetaPersonaje(){
     seccion.appendChild(tarjetaPersonaje);
 }
 
-// function traerPersonaje(){
-//     let numCharacter = aleatorio();
-//     let api = `https://rickandmortyapi.com/api/character/${numCharacter}`;
-//     fetch(api)
-//         .then(response => response.json())
-//         .then(data => {
-//             crearTarjetaPersonaje(data.name, data.status, data.species, data.gender, data.origin.name, data.location.name, data.image);
-//         })
-//         .catch(err => console.log(err));
-// }
-
 const getCharacter = async () => {
     let numCharacter = aleatorio();
     let api = `https://rickandmortyapi.com/api/character/${numCharacter}`;
@@ -89,8 +78,6 @@ const getCharacter = async () => {
         console.log(error.message);
     }
 }
-
-
 
 function imprimirPersonaje(num){
     for(let i = 0; i < num; i++){
